@@ -1,0 +1,26 @@
+{
+  "name": "amazon-endpoints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oampo/amazon-endpoints.git"
+  },
+  "author": "Joe Turner <jturner@thinkful.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/oampo/amazon-endpoints/issues"
+  },
+  "homepage": "https://github.com/oampo/amazon-endpoints#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  }
+}
