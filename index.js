@@ -32,17 +32,12 @@ app.post('/record', [
     var fileName = path.join('db',
             crypto.randomBytes(20).toString('hex') + '.json');
 
-    fs.open(fileName, 'w', function(err, fd) {
+    fs.writeFile(fileName, record.toString(), function(err, fd) {
         if (err) {
             res.sendStatus(500);
         }
-        fs.write(fd, record.toString(), function(err, written, string) {
-            if (err) {
-                res.sendStatus(500);
-            }
-            res.status(201).json({
-                location: fileName
-            });
+        res.status(201).json({
+            location: fileName
         });
     });
 });
