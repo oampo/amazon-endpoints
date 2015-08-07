@@ -296,6 +296,7 @@ describe('Post endpoint', function() {
     });
 
     afterEach(function() {
+        // Reload the test data cleanly each time
         delete require.cache[path.join(__dirname, 'test-record.json')];
     });
 });
